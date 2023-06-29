@@ -57,7 +57,9 @@ JL2(θ) = JL2(θ0, θ1, . . . , θn) = (1/2m) ∑(i=1 to m) (hθ(x(i)) - y(i))^2
 J(θ) = J(θ0, θ1, . . . , θn) = (1/2m) ∑(i=1 to m) (hθ(x(i)) - y(i))^2
 
 
+## ADDITIONAL NOTES
 
+I made this projects as part of some tasks for a Numerical Methods course and I also uploaded here the official checker which is not my work.
 
 
 
