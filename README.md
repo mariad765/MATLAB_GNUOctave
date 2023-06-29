@@ -21,17 +21,4 @@ For this project, several functions have been implemented:
 
 7. `decode_path`: Transforms the found path into a matrix of pairs representing the coordinates of the maze cells. The purpose of this function is to transform the found path into a matrix of pairs (row and column of the cells). This function converts a linear index to coordinates (i, j) in the given size matrix. During the transformation, the function also checks if the linear indices in the path list are valid, i.e., they are between 1 and the total number of cells in the maze matrix, and if not, it displays an error. The final result is a list of coordinates (i, j) representing the path through the maze.
 
-Please note that the original text contained some typographical errors and inconsistencies, which were preserved during the translation process.
-
-
-- `get_link_matrix`: Transforms the matrix of encodings of a valid labyrinth into a corresponding link matrix. The purpose of this function is to construct the link matrix associated with the given labyrinth. For implementation, we start with the adjacency matrix and observe that instead of 1, we need to use 1 divided by the sum of elements in each row. We iterate through the adjacency matrix and create the link matrix using the discovered rule.
-
-- `get_Jacobi_parameters`: Calculates the matrix and iteration vector for the Jacobi method using the previously obtained link matrix. The purpose of this function is to calculate the parameters required for applying the Jacobi method to find the solution of the system. We utilize the theory from the course. We know that A = N - P and A = D + L + U, where D is the diagonal matrix, L is the lower triangular matrix, and U is the upper triangular matrix. We specialize for the Jacobi case where N = D. Matrix G is the inverse of N * P, and c is the inverse of N * the vector b (the solutions).
-
-- `perform_iterative`: Applies the iterative method to find the solution of the system. The purpose of this function is to apply the Jacobi iterative method to find the solution of the system of equations. We utilize the previously calculated matrix and vector, as well as the initial guess x_0. We perform iterations using the formula x_i = G * x_{i-1} + c until convergence.
-
-- `find_winning_probability`: Calculates the probability of reaching a winning zone for each cell in the labyrinth. The purpose of this function is to determine the probability of reaching a winning zone for each cell in the labyrinth using the iterative method. We initialize a probability vector and use the Jacobi method to update the probabilities until convergence. We continue iterating until the probabilities for all cells stabilize.
-
-- `find_best_path`: Finds the best path for the robot to escape from the labyrinth. The purpose of this function is to determine the best path for the robot to escape from the labyrinth based on the probabilities calculated in the previous step. We start from the cell with the highest probability of reaching a winning zone and move towards the winning exit. We continue moving to adjacent cells with higher probabilities until we reach the winning exit. The resulting path is the best path for the robot to escape.
-
 Note: The above functions represent the core logic and steps involved in finding the best path for the robot to escape from the labyrinth.
