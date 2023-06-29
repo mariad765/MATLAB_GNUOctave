@@ -49,7 +49,12 @@ The `parse_csv_file` function reads this data and constructs the feature matrix 
 `ridge_regression_cost_function`: implements the cost function for ridge regression, which is a variant of linear regression that uses L2 regularization. The difference between L1 and L2 is that L1 uses the L1 norm to add a penalty proportional to the sum of the absolute values of the coefficients, while L2 uses the L2 norm to add a penalty proportional to the sum of the squared coefficients.
 
 Formulas used:
+
 JL1(θ) = JL1(θ0, θ1, . . . , θn) = (1/m) ∑(i=1 to m) (hθ(x(i)) - y(i))^2 + λ ∥θ∥1
+
+JL2(θ) = JL2(θ0, θ1, . . . , θn) = (1/2m) ∑(i=1 to m) (hθ(x(i)) - y(i))^2 + λ ∑(j=1 to n) θj^2
+
+
 
 
 
