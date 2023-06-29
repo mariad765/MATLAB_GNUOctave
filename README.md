@@ -22,3 +22,5 @@ For this project, several functions have been implemented:
 7. `decode_path`: Transforms the found path into a matrix of pairs representing the coordinates of the maze cells. The purpose of this function is to transform the found path into a matrix of pairs (row and column of the cells). This function converts a linear index to coordinates (i, j) in the given size matrix. During the transformation, the function also checks if the linear indices in the path list are valid, i.e., they are between 1 and the total number of cells in the maze matrix, and if not, it displays an error. The final result is a list of coordinates (i, j) representing the path through the maze.
 
 Note: The above functions represent the core logic and steps involved in finding the best path for the robot to escape from the labyrinth.
+ 
+## Project 2: Optimizing Linear Regression Models with CSV Data: Parameter Tuning and Performance Evaluation 
