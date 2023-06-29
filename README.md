@@ -26,6 +26,7 @@ Note: The above functions represent the core logic and steps involved in finding
 ## Project 2: Optimizing Linear Regression Models with CSV Data: Parameter Tuning and Performance Evaluation 
 
 
-###Description: 
+### Description: 
+
 This task is closely related to artificial intelligence and machine learning. Linear Regression can help in handling predictions and errors that may occur in computational processing. Linear Regression can be geometrically interpreted as a line that minimizes the square root of the sum of distances of points (data) belonging to a set of interest. Linear Regression deals with minimizing the cost function and loss. There are various types of predictions, but for this task, multiple Linear Regression has been chosen. Essentially, it is a function. The specific coefficients of the Machine Learning model, also known as weights, describe how capable a model is of making predictions that are as accurate as possible (close to reality) after receiving new data that it has not seen before. The cost function measures the error between the actual value and the predicted value and needs to be minimized. Common optimization algorithms... Two common methods are the Gradient Descent method and the Normal Equation method. The Gradient Descent method is an iterative approach based on calculating the gradient of the cost function and adjusting the coefficients.
 
